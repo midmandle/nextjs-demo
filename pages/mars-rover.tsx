@@ -30,4 +30,10 @@ const MarsRoverPage = () => {
         <Grid roverLocation={roverLocation} />
     </div>
 };
+
+// @ts-ignore
+export const getServerSideProps: GetServerSideProps = async (context) => {
+  console.log("HIT");
+}
+
 export default MarsRoverPage;
